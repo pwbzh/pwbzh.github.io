@@ -1,0 +1,33 @@
+// Body colors
+$body-color: #343a40;
+$body-bg: #e9ecef;
+
+// Headings
+$headings-font-weight: 700;
+
+// Border radius
+$border-radius: .25rem * 4;
+$border-radius-sm: .2rem * 4;
+$border-radius-lg: .3rem * 4;
+$border-radius-pill: 50rem * 4;
+
+// Bootstrap 5
+@import "bootstrap/bootstrap";
+
+.card {
+    box-shadow: $box-shadow-sm;
+    border-color: $gray-400;
+}
+
+.card-as-link {
+    text-decoration: none;
+    color: $body-color;
+
+    &:hover {
+        box-shadow: $box-shadow;
+        border-color: $gray-600;
+        color: $body-color;
+    }
+
+    transition-duration: 300ms;
+}
